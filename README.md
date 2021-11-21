@@ -36,7 +36,7 @@ There are two resources that the application needs to perform the verification:
 * __Trust List__ - A list of all valid Signature public keys
 * __Value Sets__ - Multiple value sets each with a defined set of values. E.g. _vaccines-covid-19-names_ 
 
-The resources available at the Swedish DCC Trust Point has their origin in the EU Digital Covid Certificate Gateway (EU DCCG),
+The resources available at the Swedish DCC Trust Point have their origin in the EU Digital Covid Certificate Gateway (EU DCCG),
 as shown in the following illustration:
 
 ![External Resources](readme-resources/external_resources.png)
