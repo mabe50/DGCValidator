@@ -13,6 +13,7 @@ using ZXing.Mobile;
 using Xamarin.Forms;
 using DGCValidator.Services;
 using DGCValidator.Resources;
+using Application = Android.App.Application;
 
 [assembly: Dependency(typeof(DGCValidator.Droid.Services.QRScanningService))]
 
@@ -40,7 +41,11 @@ namespace DGCValidator.Droid.Services
                 CancelButtonText = AppResources.ScanCancelText,
             };
 
-            try
+            scanner.UseCustomOverlay = true;
+            var customOverlay = new ScannerView(Application.Context, scanner);
+            scanner.CustomOverlay = customOverlay;
+            //scanner.Scan().ContinueWith(t => { //Handle Result });
+                try
             {
                 var scanResult = await scanner.Scan();
                 if (scanResult != null)

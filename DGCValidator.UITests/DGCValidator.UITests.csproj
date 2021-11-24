@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -45,7 +45,7 @@
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\VacBevisValidator.Android\VacBevisValidator.Android.csproj">
+    <ProjectReference Include="..\DGCValidator.Android\DGCValidator.Android.csproj">
       <Project>{FBAECA63-A676-4A4C-99BA-7A0A70A94471}</Project>
       <Name>DGCValidator.Android</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
